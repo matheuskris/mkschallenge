@@ -16,7 +16,10 @@ export default function Navigation() {
         <h1>MKS</h1>
         <span>Sistemas</span>
       </LogoContainer>
-      <CartContainer onClick={() => setIsMenuOpen(true)}>
+      <CartContainer
+        data-testid="cartIconBtn"
+        onClick={() => setIsMenuOpen(true)}
+      >
         <Image width={19} height={18} src={CartIcon} alt="cart svg" />
         <span>{total}</span>
       </CartContainer>

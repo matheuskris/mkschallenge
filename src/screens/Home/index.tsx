@@ -42,10 +42,10 @@ export default function Home() {
       sortBy: "id",
       orderBy: "DESC",
     };
-    dispatch(fetchProducts(params))
-      .then(() => console.log("success"))
-      .catch((err) => console.log(err));
+    dispatch(fetchProducts(params));
   }, []);
+
+  console.log(products);
 
   return (
     <HomeContainer>

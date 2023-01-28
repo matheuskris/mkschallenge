@@ -17,7 +17,7 @@ export default function CartMenu({ isOpen, setMenu }: CartMenuProps) {
   }, 0);
 
   return (
-    <CartContainer isOpen={isOpen}>
+    <CartContainer data-testid="cartContainer" isOpen={isOpen}>
       <div className="content">
         <header>
           <h2>Carrinho de compras</h2>

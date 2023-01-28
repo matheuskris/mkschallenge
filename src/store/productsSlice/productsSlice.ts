@@ -29,11 +29,15 @@ export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async (params: getProductsParams, { rejectWithValue }) => {
     try {
+      console.log("vou tentar achar os prods heinn");
       const data = await api
         .get("/products", {
           params,
         })
-        .then((response) => response.data.products as Product[]);
+        .then((response) => {
+          console.log(response);
+          return response.data.products as Product[];
+        });
       return data;
     } catch (err) {
       return rejectWithValue(err);
