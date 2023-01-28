@@ -36,7 +36,11 @@ export const CartContainer = styled.div<CartContProps>`
       h2 {
         color: white;
         font-weight: 700;
-        font-size: 27px;
+        font-size: 18px;
+
+        @media (min-width: 700px) {
+          font-size: 27px;
+        }
       }
     }
     ul {
@@ -48,6 +52,7 @@ export const CartContainer = styled.div<CartContProps>`
       gap: 14px;
       max-height: 390px;
 
+      transition: all ease-in-out 200ms;
       overflow-y: scroll;
 
       @media (min-width: 600px) {
@@ -117,10 +122,18 @@ export const CloseButton = styled.button`
 
   font-size: 28px;
   font-weight: 400;
-
+  scale: 0.8;
   cursor: pointer;
 
   &:hover {
-    scale: 1.07;
+    scale: 0.87;
+  }
+
+  @media (min-width: 700px) {
+    scale: 1;
+
+    &:hover {
+      scale: 1.07;
+    }
   }
 `;

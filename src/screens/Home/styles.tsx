@@ -12,7 +12,7 @@ export const ProductsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   margin-block: 100px;
   justify-content: center;
   align-items: flex-start;
@@ -22,6 +22,6 @@ export const ProductsContainer = styled.div`
     margin-inline: 100px;
   }
   @media (min-width: 800px) {
-    margin-inline: 110px;
+    margin-inline: 200px;
   }
 `;
