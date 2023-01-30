@@ -1,8 +1,4 @@
-import {
-  createSlice,
-  createAsyncThunk,
-  isRejectedWithValue,
-} from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { Product } from "@/screens/Home";
 import { api } from "@/lib/axios";
 
