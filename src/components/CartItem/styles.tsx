@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const CartItemContainer = styled.li`
   background-color: white;
+  width: 70%;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 13px 8px 19px 8px;
@@ -14,6 +16,7 @@ export const CartItemContainer = styled.li`
   @media (min-width: 600px) {
     flex-direction: row;
     padding: 19px 15px 19px 23px;
+    width: 100%;
   }
 
   .image-container {

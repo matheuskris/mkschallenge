@@ -25,7 +25,7 @@ export const CartContainer = styled.div<CartContProps>`
   .content {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
 
     header {
       display: flex;
@@ -46,17 +46,17 @@ export const CartContainer = styled.div<CartContProps>`
     ul {
       margin-top: 10px;
       padding: 20px 40px 0 20px;
-      height: 100%;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
       gap: 14px;
-      max-height: 390px;
+      height: 80%;
 
       transition: all ease-in-out 200ms;
       overflow-y: scroll;
+      overflow-x: hidden;
 
       @media (min-width: 600px) {
-        max-height: 410px;
         padding: 20px 60px 0 47px;
       }
 
@@ -71,12 +71,12 @@ export const CartContainer = styled.div<CartContProps>`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: auto;
 
       color: white;
       font-size: 28px;
       font-weight: 700;
 
-      margin-top: auto;
       padding: 20px 20px 26px 20px;
 
       @media (min-width: 600px) {
@@ -88,7 +88,7 @@ export const CartContainer = styled.div<CartContProps>`
   button.finishCartButton {
     background-color: black;
     width: 100%;
-    height: 97px;
+    height: 10%;
     margin-top: auto;
 
     display: flex;
