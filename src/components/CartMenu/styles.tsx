@@ -120,7 +120,7 @@ export const CloseButton = styled.button`
   align-items: center;
   border-radius: 100px;
 
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   scale: 0.8;
   cursor: pointer;

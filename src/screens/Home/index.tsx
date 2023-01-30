@@ -28,6 +28,7 @@ export type Product = {
 export default function Home() {
   const products = useSelector(selectProducts);
   const isLoading = useSelector(selectIsLoading);
+
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {

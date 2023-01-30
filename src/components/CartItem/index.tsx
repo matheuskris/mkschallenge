@@ -46,7 +46,7 @@ export default function CartItem({ item }: CartItemProps) {
         <h3>R${itemTotal.toFixed()}</h3>
       </div>
       <button className="delete-item-button" onClick={handleDelete}>
-        x
+        X
       </button>
     </CartItemContainer>
   );

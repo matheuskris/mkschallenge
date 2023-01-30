@@ -23,6 +23,10 @@ export const CartItemContainer = styled.li`
     position: relative;
     width: 130px;
     height: 60px;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   h4 {
@@ -34,10 +38,9 @@ export const CartItemContainer = styled.li`
   .numbers {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 40px;
 
     h3 {
       font-size: 14px;
@@ -70,11 +73,11 @@ export const CartItemContainer = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 50%;
 
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 17px;
+    line-height: 0px;
 
     position: absolute;
     right: 6px;
@@ -102,6 +105,12 @@ export const CartItemContainer = styled.li`
 export const ChangeButtonsContainer = styled.div`
   width: 50px;
   scale: 1.4;
+  transform: translateX(10px);
+
+  @media (min-width: 600px) {
+    transform: translateY(-4px);
+    scale: 1;
+  }
 
   p {
     font-size: 5px;
@@ -112,11 +121,6 @@ export const ChangeButtonsContainer = styled.div`
     @media (min-width: 600px) {
       display: flex;
     }
-  }
-
-  @media (min-width: 600px) {
-    transform: translateY(-4px);
-    scale: 1;
   }
 
   div {
